@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* background-image: url("https://img.freepik.com/premium-vector/hand-drawn-set-quest-doodle-riddles-puzzles-quizzes-compass-map-lock-key-maze-hourglass-sketch-style_563464-388.jpg?w=740");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh; */
+    background: url("https://img.freepik.com/premium-vector/hand-drawn-set-quest-doodle-riddles-puzzles-quizzes-compass-map-lock-key-maze-hourglass-sketch-style_563464-388.jpg?w=740") no-repeat;
+    background-size: cover;
+}
+
+.rounded {
+    border-left: 5px solid rgba(0, 0, 0, 0.5);
+}
+
+.alternativas {
+    text-align: left;
+}
+
+.pergunta {
+    font-size: 1rem;
+}
+
+.oculto {
+    display: none;
+
+}
+/* // ANIMAÇÕES */
+.fade-in {
+    animation: fadeIn 1s ease-in;
+    animation-fill-mode: forwards;
+}
+
+.fade-out {
+    animation: fadeOut 1s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
