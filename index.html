@@ -7,7 +7,7 @@
     <title>(!?) Quiz (!?)</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets./css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 
 </head>
 
@@ -24,24 +24,40 @@
                         <div class="form-check">
                             <input type="radio" class="form-check-input" name="alternativa" id="a">
                             <label for="a" class="form-check-label">A</label>
+                            <div class="valid-feedback">
+                                Resposta correta!
+                            </div>
+                            <div class="invalid-feedback">Resposta incorreta! :(</div>
                         </div>
 
 
                         <div class="form-check">
                             <input type="radio" class="form-check-input" name="alternativa" id="b">
                             <label for="b" class="form-check-label">B</label>
+                            <div class="valid-feedback">
+                                Resposta correta!
+                            </div>
+                            <div class="invalid-feedback">Resposta incorreta! :(</div>
                         </div>
 
 
                         <div class="form-check">
                             <input type="radio" class="form-check-input" name="alternativa" id="c">
                             <label for="c" class="form-check-label">C</label>
+                            <div class="valid-feedback">
+                                Resposta correta!
+                            </div>
+                            <div class="invalid-feedback">Resposta incorreta! :(</div>
                         </div>
 
 
                         <div class="form-check">
                             <input type="radio" class="form-check-input" name="alternativa" id="d">
                             <label for="d" class="form-check-label">D</label>
+                            <div class="valid-feedback">
+                                Resposta correta!
+                            </div>
+                            <div class="invalid-feedback">Resposta incorreta! :(</div>
                         </div>
                     </div>
                     <div class="row">
@@ -57,21 +73,24 @@
             </div>
         </div>
         <div class="shadow p-3 mb-3 bg-body rounded oculto finalizou">
-            Parbéns! Você finalizou o Quiz!
+            Parabéns! Você finalizou o Quiz!
         </div>
         <div class="row">
             <div class="comecar">
                 <button type="button" class="btn btn-success" onclick="comecar()">Começar</button>
             </div>
             <div class="reiniciar oculto">
-                <button type="button" class="btn btn-danger m-3">Reiniciar</button>
+                <button type="button" class="btn btn-danger m-3" onclick="reiniciar()">Reiniciar</button>
+            </div>
+            <div class="continuar oculto">
+                <button type="button" class="btn btn-dark m-3" onclick="comecar()">Continuar</button>
             </div>
         </div>
     </div>
 
 
-    <script src="./assets./js/script.js"></script>
-    <script src="./assets./js/perguntas.js"></script>
+    <script src=" ./assets/js/script.js"> </script>
+    <script src="./assets/js/perguntas.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
     </script>
